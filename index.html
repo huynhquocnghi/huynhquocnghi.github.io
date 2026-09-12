@@ -8,17 +8,22 @@
           content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
-          content="Trang web chính thức giới thiệu kênh YouTube Huỳnh Quốc Nghị.">
+          content="Website chính thức giới thiệu Huỳnh Quốc Nghị - YouTube Creator.">
 
     <meta name="author"
           content="Huỳnh Quốc Nghị">
 
+    <meta name="theme-color"
+          content="#08080c">
+
     <title>Huỳnh Quốc Nghị | Official Website</title>
 
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Google Font -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
 
     <link rel="preconnect"
           href="https://fonts.gstatic.com"
@@ -28,41 +33,82 @@
           rel="stylesheet">
 </head>
 
+
 <body>
 
-<!-- ================= HEADER ================= -->
+<!-- ==================================================
+     BACKGROUND EFFECT
+================================================== -->
+
+<div class="background-effects">
+
+    <div class="glow glow-1"></div>
+
+    <div class="glow glow-2"></div>
+
+    <div class="glow glow-3"></div>
+
+</div>
+
+
+<!-- ==================================================
+     HEADER
+================================================== -->
 
 <header class="header">
 
     <div class="container nav">
 
-        <a href="#home" class="logo">
+        <a href="#home"
+           class="logo">
+
             HQN<span>.</span>
+
         </a>
 
-        <nav class="menu">
 
-            <a href="#home">Trang chủ</a>
+        <nav id="mainNav">
 
-            <a href="#about">Giới thiệu</a>
+            <a href="#home">
+                Trang chủ
+            </a>
 
-            <a href="#videos">Video</a>
+            <a href="#about">
+                Giới thiệu
+            </a>
 
-            <a href="#contact">Liên hệ</a>
+            <a href="#youtube">
+                YouTube
+            </a>
+
+            <a href="#personality">
+                Tính cách
+            </a>
+
+            <a href="#contact">
+                Liên hệ
+            </a>
 
         </nav>
+
 
         <div class="nav-actions">
 
             <button id="themeButton"
-                    class="theme-button"
+                    class="icon-button"
                     aria-label="Đổi giao diện">
+
                 🌙
+
             </button>
 
+
             <button id="menuButton"
-                    class="menu-button">
+                    class="icon-button menu-button"
+                    aria-label="Mở menu">
+
                 ☰
+
             </button>
 
         </div>
@@ -72,43 +118,109 @@
 </header>
 
 
-<!-- ================= HERO ================= -->
+<!-- ==================================================
+     HERO
+================================================== -->
 
 <main>
 
-<section id="home" class="hero">
+<section id="home"
+         class="hero">
 
-    <div class="hero-background"></div>
+    <div class="container hero-grid">
 
-    <div class="container hero-content">
 
-        <div class="hero-text">
+        <!-- HERO TEXT -->
 
-            <p class="small-title">
-                👋 CHÀO MỪNG BẠN ĐẾN VỚI
-            </p>
+        <div class="hero-content">
+
+            <div class="status">
+
+                <span class="status-dot"></span>
+
+                OFFICIAL PERSONAL WEBSITE
+
+            </div>
+
 
             <h1>
-                Huỳnh Quốc <span>Nghị</span>
+
+                Huỳnh Quốc
+
+                <span>Nghị</span>
+
             </h1>
 
-            <p class="hero-description">
-                Trang web giới thiệu chính thức về Huỳnh Quốc Nghị
-                và kênh YouTube cá nhân.
+
+            <p class="hero-subtitle">
+
+                YouTube Creator • Technology • Creativity
+
             </p>
+
+
+            <p class="hero-description">
+
+                Chào mừng bạn đến với website cá nhân
+                của Huỳnh Quốc Nghị — nơi giới thiệu
+                bản thân, những hoạt động sáng tạo và
+                kênh YouTube cá nhân.
+
+            </p>
+
 
             <div class="hero-buttons">
 
                 <a href="https://youtube.com/@huynhquocnghi2009"
                    target="_blank"
-                   rel="noopener"
-                   class="btn btn-youtube">
-                    ▶ Xem kênh YouTube
+                   rel="noopener noreferrer"
+                   class="button primary">
+
+                    <span>▶</span>
+
+                    Xem kênh YouTube
+
                 </a>
 
+
                 <a href="#about"
-                   class="btn btn-outline">
-                    Tìm hiểu thêm
+                   class="button secondary">
+
+                    Khám phá thêm
+
+                    <span>↓</span>
+
+                </a>
+
+            </div>
+
+
+            <div class="hero-social">
+
+                <a href="https://www.facebook.com/share/1Geamhgypd/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+
+                    Facebook
+
+                </a>
+
+
+                <a href="https://www.instagram.com/huynhquocnghi29/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+
+                    Instagram
+
+                </a>
+
+
+                <a href="https://www.tiktok.com/@huynhquocnghi29"
+                   target="_blank"
+                   rel="noopener noreferrer">
+
+                    TikTok
+
                 </a>
 
             </div>
@@ -116,22 +228,69 @@
         </div>
 
 
-        <div class="hero-card">
+        <!-- PROFILE -->
 
-            <div class="avatar">
-                HQN
+        <div class="profile-area">
+
+            <div class="profile-ring">
+
+                <div class="profile-image">
+
+                    HQN
+
+                </div>
+
             </div>
 
-            <h2>
-                Huỳnh Quốc Nghị
-            </h2>
 
-            <p>
-                YouTube Creator
-            </p>
+            <div class="floating-card card-top">
 
-            <div class="verified">
-                ✓ Kênh chính thức
+                <span>🎬</span>
+
+                <div>
+
+                    <strong>
+                        YouTube
+                    </strong>
+
+                    <small>
+                        Creator
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <div class="floating-card card-bottom">
+
+                <span>✨</span>
+
+                <div>
+
+                    <strong>
+                        Creativity
+                    </strong>
+
+                    <small>
+                        Always learning
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <div class="profile-name">
+
+                <strong>
+                    Huỳnh Quốc Nghị
+                </strong>
+
+                <span>
+                    ✓ Official
+                </span>
+
             </div>
 
         </div>
@@ -141,117 +300,244 @@
 </section>
 
 
-<!-- ================= ABOUT ================= -->
+<!-- ==================================================
+     QUICK INFO
+================================================== -->
 
-<section id="about" class="section">
+<section class="quick-info">
+
+    <div class="container quick-grid">
+
+
+        <div class="quick-card">
+
+            <span class="quick-icon">
+                🎂
+            </span>
+
+            <div>
+
+                <small>
+                    Ngày sinh
+                </small>
+
+                <strong>
+                    16 / 06 / 2009
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <div class="quick-card">
+
+            <span class="quick-icon">
+                🎬
+            </span>
+
+            <div>
+
+                <small>
+                    Hoạt động
+                </small>
+
+                <strong>
+                    YouTube Creator
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <div class="quick-card">
+
+            <span class="quick-icon">
+                📍
+            </span>
+
+            <div>
+
+                <small>
+                    Website
+                </small>
+
+                <strong>
+                    huynhquocnghi.github.io
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <div class="quick-card">
+
+            <span class="quick-icon">
+                ❤️
+            </span>
+
+            <div>
+
+                <small>
+                    Sở thích
+                </small>
+
+                <strong>
+                    Công nghệ & sáng tạo
+                </strong>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==================================================
+     ABOUT
+================================================== -->
+
+<section id="about"
+         class="section">
 
     <div class="container">
 
-        <div class="section-title">
 
-            <p>ABOUT ME</p>
+        <div class="section-heading">
+
+            <div class="section-label">
+                01 — ABOUT ME
+            </div>
 
             <h2>
-                Xin chào, mình là <span>Huỳnh Quốc Nghị</span>
+
+                Giới thiệu về
+
+                <span>
+                    Huỳnh Quốc Nghị
+                </span>
+
             </h2>
 
         </div>
 
 
-        <div class="about-grid">
+        <div class="about-layout">
 
-            <div class="about-text">
+
+            <div class="about-main">
+
+                <div class="large-number">
+                    2009
+                </div>
+
 
                 <h3>
-                    Chào mừng bạn đến với website của mình!
+                    Một người trẻ yêu thích
+                    công nghệ và sáng tạo.
                 </h3>
 
-                <p>
-                    Đây là trang web cá nhân được tạo để giới thiệu
-                    về Huỳnh Quốc Nghị và kênh YouTube.
-                </p>
 
                 <p>
-                    Bạn có thể khám phá những nội dung mới nhất,
-                    theo dõi các video và kết nối với mình thông qua
-                    các nền tảng mạng xã hội.
+
+                    Huỳnh Quốc Nghị sinh ngày
+                    <strong>16 tháng 6 năm 2009</strong>.
+                    Đây là website cá nhân được xây dựng
+                    để giới thiệu bản thân và chia sẻ
+                    những hoạt động, nội dung sáng tạo
+                    trên Internet.
+
                 </p>
 
-                <a href="https://youtube.com/@huynhquocnghi2009"
-                   target="_blank"
-                   rel="noopener"
-                   class="text-link">
-                    Khám phá kênh YouTube →
-                </a>
+
+                <p>
+
+                    Nghị đặc biệt quan tâm đến YouTube,
+                    công nghệ, máy tính, mạng Internet
+                    và việc tự học những kiến thức mới.
+                    Website này là một không gian cá nhân
+                    để kết nối những nội dung đó lại
+                    với nhau.
+
+                </p>
+
+
+                <p>
+
+                    Với tinh thần học hỏi và khám phá,
+                    mỗi dự án mới là một cơ hội để
+                    thử nghiệm, cải thiện kỹ năng và
+                    tạo ra những sản phẩm tốt hơn.
+
+                </p>
 
             </div>
 
 
-            <div class="about-cards">
+            <div class="about-side">
 
-                <div class="info-card">
 
-                    <div class="icon">
-                        🎬
-                    </div>
+                <div class="info-panel">
+
+                    <span class="panel-number">
+                        01
+                    </span>
 
                     <h3>
-                        YouTube
+                        Học hỏi
                     </h3>
 
                     <p>
-                        Chia sẻ video và những nội dung thú vị.
+
+                        Luôn tìm hiểu những kiến thức
+                        mới và không ngừng cải thiện
+                        bản thân.
+
                     </p>
 
                 </div>
 
 
-                <div class="info-card">
+                <div class="info-panel">
 
-                    <div class="icon">
-                        💻
-                    </div>
-
-                    <h3>
-                        Công nghệ
-                    </h3>
-
-                    <p>
-                        Khám phá công nghệ và những điều mới mẻ.
-                    </p>
-
-                </div>
-
-
-                <div class="info-card">
-
-                    <div class="icon">
-                        🚀
-                    </div>
+                    <span class="panel-number">
+                        02
+                    </span>
 
                     <h3>
                         Sáng tạo
                     </h3>
 
                     <p>
-                        Không ngừng học hỏi và phát triển.
+
+                        Thích thử nghiệm những ý tưởng
+                        mới và biến chúng thành sản phẩm
+                        thực tế.
+
                     </p>
 
                 </div>
 
 
-                <div class="info-card">
+                <div class="info-panel">
 
-                    <div class="icon">
-                        ❤️
-                    </div>
+                    <span class="panel-number">
+                        03
+                    </span>
 
                     <h3>
-                        Cộng đồng
+                        Công nghệ
                     </h3>
 
                     <p>
-                        Cảm ơn mọi người đã luôn ủng hộ.
+
+                        Quan tâm đến máy tính, mạng,
+                        phần mềm, Internet và YouTube.
+
                     </p>
 
                 </div>
@@ -265,190 +551,543 @@
 </section>
 
 
-<!-- ================= YOUTUBE ================= -->
+<!-- ==================================================
+     PERSONALITY
+================================================== -->
 
-<section id="videos" class="section youtube-section">
+<section id="personality"
+         class="section dark-section">
 
     <div class="container">
 
-        <div class="section-title center">
 
-            <p>MY YOUTUBE</p>
+        <div class="section-heading">
+
+            <div class="section-label">
+                02 — PERSONALITY
+            </div>
 
             <h2>
-                Kênh <span>YouTube</span>
+
+                Tính cách &
+
+                <span>
+                    con người
+                </span>
+
             </h2>
 
-            <p class="subtitle">
-                Hãy ghé thăm kênh để xem những video mới nhất.
+            <p>
+
+                Những nét tính cách được giới thiệu
+                trên website cá nhân.
+
             </p>
 
         </div>
 
 
-        <div class="youtube-card">
+        <div class="personality-grid">
 
-            <div class="youtube-icon">
+
+            <article class="personality-card">
+
+                <div class="personality-icon">
+                    🧠
+                </div>
+
+                <span>
+                    01
+                </span>
+
+                <h3>
+                    Ham học hỏi
+                </h3>
+
+                <p>
+
+                    Luôn có tinh thần tìm hiểu,
+                    khám phá những kiến thức mới,
+                    đặc biệt là các lĩnh vực liên
+                    quan đến công nghệ.
+
+                </p>
+
+            </article>
+
+
+            <article class="personality-card">
+
+                <div class="personality-icon">
+                    💡
+                </div>
+
+                <span>
+                    02
+                </span>
+
+                <h3>
+                    Sáng tạo
+                </h3>
+
+                <p>
+
+                    Thích đưa ra ý tưởng mới,
+                    thử nghiệm cách làm khác và
+                    biến những ý tưởng đó thành
+                    sản phẩm thực tế.
+
+                </p>
+
+            </article>
+
+
+            <article class="personality-card">
+
+                <div class="personality-icon">
+                    🎯
+                </div>
+
+                <span>
+                    03
+                </span>
+
+                <h3>
+                    Có mục tiêu
+                </h3>
+
+                <p>
+
+                    Khi đã quan tâm đến một lĩnh vực,
+                    luôn cố gắng tìm hiểu và hoàn thiện
+                    kỹ năng từng bước.
+
+                </p>
+
+            </article>
+
+
+            <article class="personality-card">
+
+                <div class="personality-icon">
+                    🤝
+                </div>
+
+                <span>
+                    04
+                </span>
+
+                <h3>
+                    Thân thiện
+                </h3>
+
+                <p>
+
+                    Trân trọng những người theo dõi,
+                    bạn bè và cộng đồng đã dành thời
+                    gian ủng hộ.
+
+                </p>
+
+            </article>
+
+
+            <article class="personality-card">
+
+                <div class="personality-icon">
+                    🚀
+                </div>
+
+                <span>
+                    05
+                </span>
+
+                <h3>
+                    Năng động
+                </h3>
+
+                <p>
+
+                    Luôn muốn trải nghiệm những điều
+                    mới và thử sức với các dự án khác
+                    nhau.
+
+                </p>
+
+            </article>
+
+
+            <article class="personality-card">
+
+                <div class="personality-icon">
+                    ❤️
+                </div>
+
+                <span>
+                    06
+                </span>
+
+                <h3>
+                    Đam mê
+                </h3>
+
+                <p>
+
+                    Dành sự quan tâm cho YouTube,
+                    công nghệ và những hoạt động
+                    sáng tạo cá nhân.
+
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==================================================
+     YOUTUBE
+================================================== -->
+
+<section id="youtube"
+         class="section youtube-section">
+
+    <div class="container">
+
+
+        <div class="section-heading">
+
+            <div class="section-label">
+                03 — YOUTUBE
+            </div>
+
+            <h2>
+
+                Kênh
+
+                <span>
+                    YouTube
+                </span>
+
+            </h2>
+
+            <p>
+
+                Video mới nhất từ kênh
+                Huỳnh Quốc Nghị.
+
+            </p>
+
+        </div>
+
+
+        <div class="youtube-layout">
+
+
+            <!-- VIDEO -->
+
+            <div class="video-wrapper">
+
+                <iframe
+
+                    src="https://www.youtube.com/embed/Vs19NsqLxg8"
+
+                    title="Huỳnh Quốc Nghị - Video mới nhất"
+
+                    frameborder="0"
+
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+
+                    allowfullscreen>
+
+                </iframe>
+
+            </div>
+
+
+            <!-- INFO -->
+
+            <div class="youtube-info">
+
+
+                <div class="youtube-badge">
+                    ▶ LATEST VIDEO
+                </div>
+
+
+                <h3>
+                    Video mới nhất
+                </h3>
+
+
+                <p>
+
+                    Xem video mới được đăng trên
+                    kênh YouTube Huỳnh Quốc Nghị
+                    ngay trên website.
+
+                </p>
+
+
+                <div class="video-actions">
+
+                    <a href="https://youtu.be/Vs19NsqLxg8"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="button primary">
+
+                        ▶ Xem trên YouTube
+
+                    </a>
+
+
+                    <a href="https://youtube.com/@huynhquocnghi2009"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="button dark-button">
+
+                        Xem toàn bộ kênh →
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==================================================
+     CHANNEL
+================================================== -->
+
+<section class="channel-section">
+
+    <div class="container">
+
+
+        <div class="channel-card">
+
+
+            <div class="channel-logo">
                 ▶
             </div>
 
-            <div class="youtube-content">
 
-                <h3>
+            <div class="channel-text">
+
+                <div class="youtube-badge">
+                    YOUTUBE CHANNEL
+                </div>
+
+                <h2>
                     Huỳnh Quốc Nghị
-                </h3>
+                </h2>
 
                 <p>
                     @huynhquocnghi2009
                 </p>
 
-                <p class="youtube-description">
-                    Theo dõi kênh để không bỏ lỡ những video mới.
-                </p>
-
-                <a href="https://youtube.com/@huynhquocnghi2009"
-                   target="_blank"
-                   rel="noopener"
-                   class="btn btn-youtube">
-                    ▶ Truy cập YouTube
-                </a>
-
             </div>
 
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= STATS ================= -->
-
-<section class="stats">
-
-    <div class="container stats-grid">
-
-        <div class="stat">
-
-            <strong>01</strong>
-
-            <span>Kênh YouTube</span>
-
-        </div>
-
-
-        <div class="stat">
-
-            <strong>100%</strong>
-
-            <span>Đam mê</span>
-
-        </div>
-
-
-        <div class="stat">
-
-            <strong>∞</strong>
-
-            <span>Khám phá</span>
-
-        </div>
-
-
-        <div class="stat">
-
-            <strong>❤️</strong>
-
-            <span>Cảm ơn bạn</span>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= CONTACT ================= -->
-
-<section id="contact" class="section">
-
-    <div class="container">
-
-        <div class="section-title center">
-
-            <p>CONTACT</p>
-
-            <h2>
-                Kết nối với <span>mình</span>
-            </h2>
-
-            <p class="subtitle">
-                Cảm ơn bạn đã ghé thăm website.
-            </p>
-
-        </div>
-
-
-        <div class="contact-grid">
 
             <a href="https://youtube.com/@huynhquocnghi2009"
                target="_blank"
-               rel="noopener"
-               class="contact-card">
+               rel="noopener noreferrer"
+               class="button primary">
 
-                <span class="contact-icon">
-                    ▶
+                Đăng ký kênh
+
+                <span>
+                    ↗
                 </span>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==================================================
+     SOCIAL LINKS
+================================================== -->
+
+<section id="contact"
+         class="section contact-section">
+
+    <div class="container">
+
+
+        <div class="section-heading">
+
+            <div class="section-label">
+                04 — CONNECT
+            </div>
+
+            <h2>
+
+                Kết nối với
+
+                <span>
+                    Huỳnh Quốc Nghị
+                </span>
+
+            </h2>
+
+        </div>
+
+
+        <div class="social-grid">
+
+
+            <a href="https://www.facebook.com/share/1Geamhgypd/"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="social-card facebook">
+
+                <div class="social-icon">
+                    f
+                </div>
 
                 <div>
 
-                    <h3>YouTube</h3>
+                    <small>
+                        FACEBOOK
+                    </small>
 
-                    <p>
-                        @huynhquocnghi2009
-                    </p>
+                    <strong>
+                        Huỳnh Quốc Nghị
+                    </strong>
 
                 </div>
+
+                <span>
+                    ↗
+                </span>
 
             </a>
 
 
-            <div class="contact-card">
+            <a href="https://www.instagram.com/huynhquocnghi29/"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="social-card instagram">
 
-                <span class="contact-icon">
-                    🌐
-                </span>
+                <div class="social-icon">
+                    ◎
+                </div>
 
                 <div>
 
-                    <h3>Website</h3>
+                    <small>
+                        INSTAGRAM
+                    </small>
 
-                    <p>
-                        Huỳnh Quốc Nghị
-                    </p>
+                    <strong>
+                        @huynhquocnghi29
+                    </strong>
 
                 </div>
 
-            </div>
-
-
-            <div class="contact-card">
-
-                <span class="contact-icon">
-                    💬
+                <span>
+                    ↗
                 </span>
+
+            </a>
+
+
+            <a href="https://www.tiktok.com/@huynhquocnghi29"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="social-card tiktok">
+
+                <div class="social-icon">
+                    ♪
+                </div>
 
                 <div>
 
-                    <h3>Liên hệ</h3>
+                    <small>
+                        TIKTOK
+                    </small>
 
-                    <p>
-                        Kết nối qua YouTube
-                    </p>
+                    <strong>
+                        @huynhquocnghi29
+                    </strong>
 
                 </div>
 
-            </div>
+                <span>
+                    ↗
+                </span>
+
+            </a>
+
+
+            <a href="https://locket.cam/huynhquocnghi29"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="social-card locket">
+
+                <div class="social-icon">
+                    💚
+                </div>
+
+                <div>
+
+                    <small>
+                        LOCKET
+                    </small>
+
+                    <strong>
+                        @huynhquocnghi29
+                    </strong>
+
+                </div>
+
+                <span>
+                    ↗
+                </span>
+
+            </a>
+
+
+            <a href="https://youtube.com/@huynhquocnghi2009"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="social-card youtube">
+
+                <div class="social-icon">
+                    ▶
+                </div>
+
+                <div>
+
+                    <small>
+                        YOUTUBE
+                    </small>
+
+                    <strong>
+                        @huynhquocnghi2009
+                    </strong>
+
+                </div>
+
+                <span>
+                    ↗
+                </span>
+
+            </a>
 
         </div>
 
@@ -456,37 +1095,102 @@
 
 </section>
 
+
+<!-- ==================================================
+     QUOTE
+================================================== -->
+
+<section class="quote-section">
+
+    <div class="container quote-content">
+
+        <span class="quote-mark">
+            “
+        </span>
+
+        <h2>
+
+            Học hỏi mỗi ngày.
+
+            <br>
+
+            Sáng tạo không ngừng.
+
+        </h2>
+
+        <p>
+            — Huỳnh Quốc Nghị
+        </p>
+
+    </div>
+
+</section>
+
+
 </main>
 
 
-<!-- ================= FOOTER ================= -->
+<!-- ==================================================
+     FOOTER
+================================================== -->
 
-<footer class="footer">
+<footer>
 
-    <div class="container footer-content">
+    <div class="container footer-grid">
+
 
         <div>
 
-            <h3>
-                Huỳnh Quốc Nghị<span>.</span>
-            </h3>
+            <a href="#home"
+               class="footer-logo">
+
+                HQN<span>.</span>
+
+            </a>
 
             <p>
+
+                Huỳnh Quốc Nghị
+
+                <br>
+
                 Official Personal Website
+
             </p>
 
         </div>
 
 
-        <div>
+        <div class="footer-links">
+
+            <a href="#home">
+                Trang chủ
+            </a>
+
+            <a href="#about">
+                Giới thiệu
+            </a>
+
+            <a href="#youtube">
+                YouTube
+            </a>
+
+            <a href="#contact">
+                Liên hệ
+            </a>
+
+        </div>
+
+
+        <div class="footer-right">
 
             <p>
                 © <span id="year"></span>
-                Huỳnh Quốc Nghị.
+                Huỳnh Quốc Nghị
             </p>
 
             <p>
-                All rights reserved.
+                Made with ❤️
             </p>
 
         </div>
@@ -496,16 +1200,21 @@
 </footer>
 
 
-<!-- ================= BACK TO TOP ================= -->
+<!-- BACK TO TOP -->
 
 <button id="topButton"
         class="top-button"
         aria-label="Lên đầu trang">
+
     ↑
+
 </button>
 
+
+<!-- JAVASCRIPT -->
 
 <script src="script.js"></script>
 
 </body>
+
 </html>
