@@ -1,79 +1,19 @@
-/* ========================================
+/* ==================================================
    HUỲNH QUỐC NGHỊ
    WEBSITE JAVASCRIPT
-======================================== */
+================================================== */
 
 
-/* ---------- MOBILE MENU ---------- */
-
-const menuButton =
-    document.getElementById("menuButton");
-
-const menu =
-    document.querySelector(".menu");
-
-
-menuButton.addEventListener("click", () => {
-
-    menu.classList.toggle("active");
-
-});
-
-
-/* ---------- CLOSE MENU WHEN CLICK ---------- */
-
-document.querySelectorAll(".menu a")
-    .forEach(link => {
-
-        link.addEventListener("click", () => {
-
-            menu.classList.remove("active");
-
-        });
-
-    });
-
-
-/* ---------- DARK MODE ---------- */
+/* ==================================================
+   DARK MODE
+================================================== */
 
 const themeButton =
     document.getElementById("themeButton");
 
 
-themeButton.addEventListener("click", () => {
-
-    document.body.classList.toggle("dark");
-
-
-    if (
-        document.body.classList.contains("dark")
-    ) {
-
-        themeButton.textContent = "☀️";
-
-        localStorage.setItem(
-            "theme",
-            "dark"
-        );
-
-    } else {
-
-        themeButton.textContent = "🌙";
-
-        localStorage.setItem(
-            "theme",
-            "light"
-        );
-
-    }
-
-});
-
-
-/* ---------- REMEMBER THEME ---------- */
-
 const savedTheme =
-    localStorage.getItem("theme");
+    localStorage.getItem("hqn-theme");
 
 
 if (savedTheme === "dark") {
@@ -85,7 +25,73 @@ if (savedTheme === "dark") {
 }
 
 
-/* ---------- CURRENT YEAR ---------- */
+themeButton.addEventListener("click", () => {
+
+    document.body.classList.toggle("dark");
+
+
+    const isDark =
+        document.body.classList.contains("dark");
+
+
+    if (isDark) {
+
+        themeButton.textContent = "☀️";
+
+        localStorage.setItem(
+            "hqn-theme",
+            "dark"
+        );
+
+    } else {
+
+        themeButton.textContent = "🌙";
+
+        localStorage.setItem(
+            "hqn-theme",
+            "light"
+        );
+
+    }
+
+});
+
+
+/* ==================================================
+   MOBILE MENU
+================================================== */
+
+const menuButton =
+    document.getElementById("menuButton");
+
+
+const mainNav =
+    document.getElementById("mainNav");
+
+
+menuButton.addEventListener("click", () => {
+
+    mainNav.classList.toggle("active");
+
+});
+
+
+document
+    .querySelectorAll("#mainNav a")
+    .forEach(link => {
+
+        link.addEventListener("click", () => {
+
+            mainNav.classList.remove("active");
+
+        });
+
+    });
+
+
+/* ==================================================
+   CURRENT YEAR
+================================================== */
 
 const year =
     document.getElementById("year");
@@ -95,7 +101,9 @@ year.textContent =
     new Date().getFullYear();
 
 
-/* ---------- BACK TO TOP ---------- */
+/* ==================================================
+   BACK TO TOP
+================================================== */
 
 const topButton =
     document.getElementById("topButton");
@@ -129,11 +137,17 @@ topButton.addEventListener("click", () => {
 });
 
 
-/* ---------- FADE ANIMATION ---------- */
+/* ==================================================
+   SCROLL REVEAL
+================================================== */
 
-const sections =
+const revealElements =
     document.querySelectorAll(
-        ".section, .stats"
+        ".quick-card, " +
+        ".info-panel, " +
+        ".personality-card, " +
+        ".social-card, " +
+        ".channel-card"
     );
 
 
@@ -144,12 +158,17 @@ const observer =
 
             entries.forEach(entry => {
 
-                if (entry.isIntersecting) {
+                if (
+                    entry.isIntersecting
+                ) {
 
-                    entry.target.style.opacity = "1";
+                    entry.target.classList.add(
+                        "visible"
+                    );
 
-                    entry.target.style.transform =
-                        "translateY(0)";
+                    observer.unobserve(
+                        entry.target
+                    );
 
                 }
 
@@ -158,22 +177,46 @@ const observer =
         },
 
         {
-            threshold: 0.1
+            threshold: .15
         }
 
     );
 
 
-sections.forEach(section => {
+revealElements.forEach(element => {
 
-    section.style.opacity = "0";
+    element.classList.add("reveal");
 
-    section.style.transform =
-        "translateY(30px)";
-
-    section.style.transition =
-        "opacity 0.7s ease, transform 0.7s ease";
-
-    observer.observe(section);
+    observer.observe(element);
 
 });
+
+
+/* ==================================================
+   PREVENT EMPTY HASH JUMP
+================================================== */
+
+document
+    .querySelectorAll('a[href^="#"]')
+    .forEach(link => {
+
+        link.addEventListener(
+            "click",
+            event => {
+
+                const targetId =
+                    link.getAttribute("href");
+
+
+                if (
+                    targetId === "#"
+                ) {
+
+                    event.preventDefault();
+
+                }
+
+            }
+        );
+
+    });
